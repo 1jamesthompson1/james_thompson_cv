@@ -1,0 +1,8 @@
+repos:
+- repo: local
+  hooks:
+  - id: build-cv-pdf
+    name: Build CV.pdf from LaTeX
+    entry: ./scripts/build_cv.sh
+    language: script
+    files: \.tex$
