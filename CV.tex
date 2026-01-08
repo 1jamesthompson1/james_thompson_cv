@@ -11,9 +11,14 @@
 \social[linkedin]{james-thompson-532246208}
 \social[github]{1jamesthompson1}
 \social[instagram]{1jamesthompson1}
+\homepage{james.sjhl.nz}
 
 % Adjust the page margins
 \usepackage[scale=0.75]{geometry}
+\usepackage{xcolor}
+\usepackage[colorlinks=true, allcolors=blue!50!black]{hyperref}
+\urlstyle{same}
+
 
 \begin{document}
 
@@ -22,53 +27,61 @@
 
 %----- EDUCATION SECTION -----
 \section{Education}
-\cventry{Feb 2025 -- Feb 2026}{Master of Artificial Intelligence}{Victoria University of Wellington}{Wellington, New Zealand}{Tracking an A+ average}{Coursework and Research}
+\cventry{Feb 2025 -- June 2026}{Master of Artificial Intelligence}{Victoria University of Wellington}{Wellington, New Zealand}{A+ coursework, thesis not completed}{Coursework focused on machine learning, deep learning. \\Example projects include \href{https://github.com/1jamesthompson1/AIML430\_capstone/blob/main/paper/output/paper.pdf}{LLM safety evaluations}, \href{https://github.com/1jamesthompson1/AIML440\_report/blob/main/output/JamesThompsonAIML440Report.pdf}{Deep RL for continuous robotic control algorithm design}\\\href{https://raw.githubusercontent.com/1jamesthompson1/AIML501/main/output/AIML501_James_Thompson.pdf}{Main project} is on AI alignment, specifically aligning LLMs to various subgroups of the New Zealand population.}
 \cventry{2021 -- 2023}{BSc in Computer Science}{Massey University}{Extramural, New Zealand}{94\% A+}{Minoring in Statistics and Mathematics}
-\cventry{2020}{NCEA Level 3 }{Hutt Valley High School}{Lower Hutt, New Zealand}{Merit Endorsed}{}
+\cventry{2020}{NCEA Level 3 }{Hutt Valley High School}{Lower Hutt, New Zealand}{Merit Endorsed}{Part of Premier Senoir debating team, and leader of the Snowsports team.}
 
 
-%----- SKILLS SECTION -----
-\section{Work Experience and Projects}
+\section{Work Experience}
 
-\cventry{July 2023 -- Current}{Data Scientist}{Transport Accident Investigation Commission}{}{}{
-This project started as my final Bachelor's Computer Science project. I built an engine that uses Large Language Models to analyze published accident investigation reports and implemented a Retrieval-Augmented Generation (RAG) architecture for a smart search engine. From November 2023 to December 2024, I worked directly with TAIC to further develop this project. I have now moved into a maintenance role while pursuing further studies.  
-\textbf{Project source code:} \url{https://github.com/1jamesthompson1/TAIC-report-summary}
+\cventry{July 2023 -- Current}{Technical Lead (AI/Data Science)}{New Zealand Transport Accident Investigation Commission}{Wellington, NZ}{}{
+Led the design and development of an AI-powered document analysis platform, deployed organisation-wide in November 2024 with a complete rewrite deployed in November 2025:
+\begin{itemize}
+    \item Built an LLM-powered data pipeline that ingests and processes transport accident investigation reports from TAIC (NZ), ATSB (Australia), and TSB (Canada), extracting structured datasets of safety issues, recommendations, and report sections
+    \item Implemented a RAG architecture with vector search (LanceDB) enabling semantic search across 100,000+ document segments, this powers an Agentic LLM to create a "smart assistant".
+    \item Developed a web application featuring a smart assistant and search tool.
+\end{itemize}
+\textbf{Open source:} \href{https://github.com/1jamesthompson1/TAIC-engine}{TAIC-engine} | \href{https://github.com/1jamesthompson1/TAIC-smart-tools}{TAIC-smart-tools}
 }
 
-\cventry{February 2025 -- June 2025}{Reinforcement Learning project}{Victoria University of Wellington}{}{}{
-This was a single semester research project as part of my Master's program. I worked independently (under supervision) to develop a novel Reinforcement Learning algorithm for continuous robotic control tasks. My algorithm idea was a blend of SAC and dynamic ensemble methods. Ultimately the algorithm was not as successful as I had hoped, but I learned a lot about research process and long running ($>$ week) computer experiments.
-\textbf{The write up can be found here:} \url{https://github.com/1jamesthompson1/AIML440_report/blob/main/output/JamesThompsonAIML440Report.pdf}
-}
-
-\cventry{April 2023 -- Current}{Freelance Developer and Data Scientist}{Self-employed}{}{}{
+\cventry{April 2023 -- Current}{Freelance Developer and Data Scientist}{Self-employed}{Remote, Global}{}{
 I work part-time on contract and freelance IT projects. My work includes developing business administration systems, such as a pupil attendance and invoicing system for a music school, and conducting data science projects like analyzing trends in health insurance claims.
 }
 
-\cventry{February 2023 -- November 2023}{Teaching Assistant}{Massey University}{}{}{
+\cventry{February 2023 -- November 2023}{Teaching Assistant}{Massey University}{Remote, NZ}{}{
 During my final year of undergraduate studies, I worked as a teaching assistant in Computer Science and Statistics courses. My responsibilities included grading assignments and tests, as well as providing one-on-one tutoring.
 }
 
-\cventry{April 2021 -- August 2023}{Telefundraiser / Developer}{Telefund NZ}{}{}{
+\cventry{April 2021 -- August 2023}{Telefundraiser / Developer}{Telefund NZ}{Remote, NZ}{}{
 I started as a tele-fundraiser and later transitioned into an administrative role. I developed an automated system to streamline administrative responsibilities and assist other callers and administrators.
 }
 
 %----- EXTRA-CURRICULAR SECTION -----
+
+\section{Skills}
+
+\cvitem{Programming languages}{Experienced with Python, comfortable with Javascript and bash, familiar with Rust and C++.}
+\cvitem{Machine Learning frameworks}{Experienced with PyTorch and Jax/Flax}
+\cvitem{AI concepts}{Experienced with LLMs (training, applications and evaluations), Deep RL and Evolutionary Computation}
+\cvitem{Devops}{Experienced with Docker, Azure, Git and CI/CD pipelines}
+\cvitem{Research}{Experienced working with HPC (Slurm), \LaTeX, academic writing and literature reviews}
+\cvitem{Soft}{Experience in project planning, time management and self-directed work.}
+
 \section{Extra-Curricular}
-\subsection{Summer Research Massey 2022/2023}
-\cvitem{Project}{Worked with Dr. J Godfrey on the BrailleR package to enhance accessibility for vision-impaired users. Focused on:}
+\subsection{Summer Research Massey University 2022/2023}
+\cvitem{Project}{Worked with Dr. J Godfrey on the \href{https://github.com/ajrgodfrey/BrailleR}{BrailleR} package to enhance accessibility for vision-impaired users working with the R statistical programming language. Focused on:}
 \cvitem{}{- Expanded the graph explainer to include more \texttt{ggplot2} graph types.}
 \cvitem{}{- Working with \texttt{Diagcess} (JS library) to create interactive webpages for blind users to explore ggplot graphs through a keyboard and sound interface}
 
 
 \subsection{Competitive Snowboarding}
-\cvitem{Experience}{I have been competing in Freeride Snowboarding since age 12, traveling overseas to compete with northern hemisphere athletes.}
+\cvitem{Experience}{I have been competing in \href{https://www.freerideworldtour.com/riders/james-thompson/}{Freeride Snowboarding} since age 12, traveling overseas to compete with northern hemisphere athletes.}
 \cvitem{Highlights and achievements}{\\
-    \cvlistitem{Currently ranked 34st on the Global seeding list}
+    \cvlistitem{Currently ranked 97th on the Global seeding list}
     \cvlistitem{Won the 2025 Winter Games NZ North Face Frontier 4* event (held in August 2024)}
     \cvlistitem{Competed at the Freeride Junior World Championship in 2020 (Austria) and 2021 (Switzerland).}
     \cvlistitem{Qualified level 2 instructor with Snowboard Instruction New Zealand.}
 }
-
 
 \section{Scholarships and Awards}
 
@@ -81,5 +94,6 @@ I started as a tele-fundraiser and later transitioned into an administrative rol
 \cvitem{2020}{Upper Hutt Cosmopolitan Kickstart Career Scholarship}
 \cvitem{2020}{Hutt Valley High School David Kaye Excellence Award}
 \cvitem{2019}{Hutt Valley High School Best Senior Debater Award}
+
 
 \end{document}
